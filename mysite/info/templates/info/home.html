@@ -1,0 +1,22 @@
+{% extends "info/base.html" %}
+{% block info %}
+    <div class="mainblock">
+        <h1>Информация о себе</h1>
+        {% load static %}
+        <img src="{% static 'media/i.jpg' %}">
+        <div class="fio_and_city">
+            <div class="text">ФИО: {{fio}}</div>
+            <div class="text">Город: {{city}}</div>
+        </div>
+        <div class="hobby">
+            <div class="text">Увлечения:</div>
+            {% for hobby in hobbies %}
+                <div class="text"> - {{hobby}}</div>
+            {% endfor %}
+        </div>
+        <div class="experience">
+            <div class="text">Опыт в разработке:</div>
+            <div class="text">{{experience}}</div>
+        </div>
+    </div>
+{% endblock %}
