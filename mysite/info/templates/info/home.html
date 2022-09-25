@@ -5,18 +5,19 @@
         {% load static %}
         <img src="{% static 'media/i.jpg' %}">
         <div class="fio_and_city">
-            <div class="text">ФИО: {{fio}}</div>
-            <div class="text">Город: {{city}}</div>
+            <div class="text">ФИО: Тарасенко Надежда Александровна</div>
+            <div class="text">Город: Казань</div>
         </div>
         <div class="hobby">
             <div class="text">Увлечения:</div>
-            {% for hobby in hobbies %}
-                <div class="text"> - {{hobby}}</div>
-            {% endfor %}
+                <div class="text"> - рисование (в основном диджитал)</div>
+                <div class="text"> - аниме и книги (обычно фэнтези)</div>
+                <div class="text"> - программирование</div>
         </div>
         <div class="experience">
             <div class="text">Опыт в разработке:</div>
-            <div class="text">{{experience}}</div>
+            <div class="text">проекты (один индивидуальный и два групповых) на втором курсе Лицея Академии Яндекса
+                (в том числе сайт на Flask)</div>
         </div>
     </div>
 {% endblock %}
